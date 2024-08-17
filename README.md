@@ -1,3 +1,8 @@
+
+![JavaScript](https://img.shields.io/badge/JavaScript-70%25-yellow)
+![HTML](https://img.shields.io/badge/HTML-20%25-red)
+![CSS](https://img.shields.io/badge/CSS-10%25-purple)
+
 ### Overview
 **This is the frontend of the Football Project, a web application built with ReactJS.
 It provides a user-friendly interface for managing football matches,
