@@ -48,12 +48,26 @@ This section has been moved here: [https://create-react-app.dev/docs/deployment/
 ### npm run build fails to minify
 This section has been moved here: [https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify](https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify)
 
+
 ### Uploading Images
+
 
 ![image](https://github.com/user-attachments/assets/360338be-38c4-4e48-8472-97f4b533dd43)
 
+
+
+
+
 ![image](https://github.com/user-attachments/assets/e1606cb0-f62a-48f1-a08c-9eda2ec54e99)
 
+
+
+
+
 ![image](https://github.com/user-attachments/assets/6c94d0d2-dc67-4378-a584-e638c66d5863)
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/2d4f0581-f51e-480f-b815-e2d25f0e0091)
