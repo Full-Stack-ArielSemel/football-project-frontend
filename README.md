@@ -3,6 +3,7 @@
 **![HTML](https://img.shields.io/badge/HTML-12%25-red)**
 **![CSS](https://img.shields.io/badge/CSS-7%25-purple)**
 
+
 ### Overview
 **This is the frontend of the Football Project, a web application built with ReactJS.
 It provides a user-friendly interface for managing football matches,
@@ -34,6 +35,18 @@ In the project directory, you can run:
 
 ### Features
 
+### Learn More
+You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
+To learn React, check out the [React documentation](https://react.dev).
+
+### Advanced Configuration
+This section has been moved here: [https://create-react-app.dev/docs/advanced-configuration/](https://create-react-app.dev/docs/advanced-configuration)
+
+### Deployment
+This section has been moved here: [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment)
+
+### npm run build fails to minify
+This section has been moved here: [https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify](https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify)
 
 ### Uploading Images
 
