@@ -5,9 +5,9 @@
 
 
 ### Overview
-**This is the frontend of the Football Project, a web application built with ReactJS.
-It provides a user-friendly interface for managing football matches,
-viewing live scores and table leagues, and interacting with the backend API.**
+**This is the frontend of the Football Project, a ReactJS-based web application.
+It provides a streamlined interface for creating and managing football matches, tracking live scores and league tables,
+and interacting with a powerful backend and MySQL database for real-time data management and synchronization.**
 
 ### Prerequisites
 - Node.js (version 14 or later)
