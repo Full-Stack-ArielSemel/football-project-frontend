@@ -1,0 +1,118 @@
+body{
+  width: 100%;
+  background-color: #fdf5e6;
+}
+
+.spanLink{
+
+  margin-left: 185px;
+
+}
+
+.navLink{
+
+  font-size: 24px;
+  text-decoration: none;
+
+
+}
+input[placeholder] {
+  font-size: 15px;
+  padding: 10px;
+}
+.icon{
+  margin-right: 5px;
+  font-size: 24px;
+
+}
+.navbar{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #34495e;
+  font-size: 44px;
+  height: 8vh;
+
+
+
+
+}
+.choosingTeams{
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 85px;
+  margin-top: 15px;
+
+}
+
+h4{
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.sameTeams{
+  font-size: 25px;
+  color: #8b0000;
+  text-align: center;
+  font-family: "Arial Narrow";
+}
+
+select{
+  font-size: 25px;
+  font-family: "Copperplate Gothic Bold";
+  background-color: rgb(11, 25, 8);
+  color: #fff878;
+
+}
+
+option{
+  font-size: 20px;
+  font-family: "Sitka Subheading";
+  font-weight: bold;
+
+}
+.container{
+  height: 15vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, #3e32a8,#e310c7);
+
+}
+
+.errorMessage{
+
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.homeContainer{
+  position: relative;
+}
+.homeContainer .homeImg{
+  width: 100%;
+  height: 600px;
+}
+.AboutList{
+  position: absolute;
+  top:100px;
+  left: 175px;
+}
+li{
+  color: gold;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 7px;
+}
+.headerHome{
+  position: absolute;
+  top:20px;
+  left: 200px;
+  color: rgba(13,255,2,0.55);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+

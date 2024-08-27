@@ -1,0 +1,133 @@
+
+.background_image{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/Images/football_img.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+h2{
+    margin-top: 5px;
+    color: darkred;
+    font-size: 30px;
+}
+.regContainer{
+
+    background-image: linear-gradient(100deg,#ff6596,#60bef8,#d88cff);
+    background-size: 50% 50%;
+    animation: bgAnimatedGradient 2s infinite linear;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+@keyframes bgAnimatedGradient {
+
+    0%{
+
+        background-position: 0 0;
+    }
+    100%{
+
+        background-position: 100% 0;
+    }
+}
+
+.imgForm{
+
+    margin-top: 5px;
+    width: 65%;
+    height: 150px;
+}
+.styleForm{
+
+    margin-left: 115px;
+    border-radius: 50px;
+    background-color: #fff878;
+    width: 500px;
+    height: 785px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.textChangeForm{
+
+    text-decoration: underline;
+    color: #3e32a8;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.textChangeForm:hover{
+    cursor: pointer;
+}
+
+.flex-input{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+
+input {
+
+    width: 100%;
+    border:2px solid #aaa;
+    border-radius: 4px;
+    margin:8px 5px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+
+}
+input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+label{
+    color: dodgerblue;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 7px;
+    font-style: italic;
+}
+
+.submitBtn {
+
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    background-color:darkgoldenrod;
+    border: none;
+    margin: 20px 0;
+}
+.submitBtn:hover{
+
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+h1{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+}
+.div-conditions{
+    text-align:left;
+    padding:3px;
+    margin-left:10px;
+    font-family: "Segoe UI Semilight";
+    font-size:25px;
+}
+
