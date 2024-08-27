@@ -1,8 +1,4 @@
 
-**![JavaScript](https://img.shields.io/badge/JavaScript-81%25-yellow)**
-**![HTML](https://img.shields.io/badge/HTML-12%25-red)**
-**![CSS](https://img.shields.io/badge/CSS-7%25-purple)**
-
 
 ### Overview
 **This is the frontend of the Football Project, a ReactJS-based web application.
