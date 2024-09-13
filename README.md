@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# Football Project : Frontend
 
 
 ### Overview
