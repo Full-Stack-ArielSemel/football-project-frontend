@@ -1,0 +1,155 @@
+
+.regContainer {
+    position: relative;
+    background: url('/public/Images/background_image.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.styleForm {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white form background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    z-index: 1;
+    border: 2px solid #4CAF50; /* Football green border */
+    position: relative;
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.flex-input {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.flex-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4CAF50; /* Football green */
+}
+
+.flex-input input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 2.5rem; /* Space for the icon */
+}
+
+.flex-input .icon {
+    position: absolute;
+    top: 65%; /* Move icon slightly down for better alignment */
+    left: 0.8rem;
+    transform: translateY(-50%);
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+.div-conditions {
+    width: 100%; /* Ensure the container takes full width */
+    font-size: 12px; /* Reduce the font size a bit more */
+    line-height: 1.3; /* Adjust line spacing */
+    white-space: nowrap; /* Prevent line breaks */
+    color: red; /* Or green depending on the condition */
+}
+
+
+
+.div-conditions div {
+    font-size: 0.9rem;
+}
+
+.div-conditions div:nth-child(even) {
+    color: green;
+}
+
+.div-conditions div:nth-child(odd) {
+    color: red;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background: #4CAF50; /* Football green */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.submitBtn:disabled {
+    background: #b0bec5;
+    cursor: not-allowed;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: #45a049;
+}
+
+.textChangeForm {
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from breaking into two lines */
+    width: 100%; /* Ensure the container takes the full width */
+    display: inline-block; /* Keep it all on one line */
+}
+
+
+
+.textChangeForm:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Football-themed icons */
+.icon {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.football-icon {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    color: lime;
+
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}

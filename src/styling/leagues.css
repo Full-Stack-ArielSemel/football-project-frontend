@@ -1,0 +1,76 @@
+.container-leagues{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    text-align: center;
+}
+.div-leagues{
+    margin: 40px 0;
+    border: solid 1px black;
+    box-shadow: 0 5px 10px rgba(0,0,0,5);
+}
+
+.div-leagues:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.img-leagues{
+    width: 300px;
+    height: 300px;
+}
+.league-name{
+    text-align: center;
+    font-family: -apple-system ;
+    border: 3px solid;
+}
+
+.back-to-leagues {
+    position: relative;
+    padding: .6rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    background: #60bef8;
+    font-family: "Arial Black";
+    font-size: 20px;
+    color: #3e32a8;
+    margin-top: 12px;
+    margin-left: 5px;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-leagues::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay effect */
+    transform: skewX(-20deg); /* Skew effect for a dynamic look */
+    animation: slide 10s linear infinite;
+    z-index: 0; /* Ensure it’s behind the text */
+}
+
+.back-to-leagues:hover {
+    background-color: #3e32a8;
+    color: #60bef8;
+}
+
+@keyframes slide {
+    0% {
+        left: -100%;
+    }
+    10% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+

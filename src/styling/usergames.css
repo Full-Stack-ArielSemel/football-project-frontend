@@ -1,0 +1,204 @@
+.header-user-list {
+    color: #0b1908; /* Keeping your existing color */
+    font-size: 40px; /* Same font size as requested */
+    font-weight: bold; /* Bold for emphasis */
+    font-family: "Maiandra GD", sans-serif; /* Retain your chosen font */
+    text-align: center; /* Center-align the text */
+    margin-top: 60px; /* Adjust top margin for better positioning */
+    padding: 20px 0; /* Add padding for vertical space */
+    background: linear-gradient(to right, #ffcc00, #ff9900); /* Warm gradient background */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    letter-spacing: 2px; /* Add space between letters for clarity */
+    width: 60%; /* Constrain width for better centering */
+    margin-left: auto;
+    margin-right: auto; /* Horizontally center the header */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.header-user-list:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+    background: linear-gradient(to right, #ff9900, #ffcc00); /* Reverse gradient on hover */
+}
+
+.user-live-games-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.row-user-live-games{
+    display: grid;
+    grid-template-columns: 50px 150px 100px 150px 50px 150px 100px;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    border: 3px solid;
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
+    transition: transform 0.2s ease;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.vs{
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bold;
+    font-size: 30px;
+    color: #f1c40f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(2,2,2,2);
+}
+
+.row-user-home-team,.row-user-away-team {
+    display: flex;
+    align-items: center;
+}
+
+.icon-team{
+
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+}
+
+.name-team {
+    font-family: source-code-pro;
+    font-size: 20px;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow: ellipsis; /* Adds "..." for long names */
+    max-width: 130px; /* Set max width to ensure uniformity */
+}
+
+.user-game-result{
+
+    text-align: center;
+    font-size: 20px;
+}
+.EndGame{
+
+    background-color: rgba(192, 255, 215, 0.73);
+    border-radius:20px;
+    font-size:18px;
+    font-family: source-code-pro;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+.EndGame:hover{
+    cursor: pointer;
+}
+
+.runLiveBtn {
+    background-color: rgba(34, 193, 195, 0.85); /* Vibrant cyan color with slight transparency */
+    color: white; /* White text for contrast */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 35px;
+    font-family: 'Source Code Pro', monospace;
+    padding: 15px 30px; /* Spacing for larger button */
+    border: none; /* Remove borders */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions */
+    z-index: 10; /* Ensures button is on top of the purple grid */
+    position: relative; /* Keeps the button above other elements */
+}
+
+.runLiveBtn:hover {
+    cursor: pointer;
+    background-color: rgba(34, 193, 195, 1); /* Darker cyan on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+.runLiveBtn:active {
+    background-color: rgba(29, 174, 176, 0.9); /* Slightly darker cyan when active */
+    transform: translateY(2px); /* Button pushed down on click */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow when clicked */
+}
+
+/* Disabled state */
+.runLiveBtn:disabled {
+    background-color: rgba(128, 128, 128, 0.6); /* Light gray to indicate disabled */
+    color: #999999; /* Gray text to show it's inactive */
+    cursor: not-allowed; /* Shows cursor as not-allowed */
+    box-shadow: none; /* Remove shadow for disabled button */
+    opacity: 0.6; /* Reduced opacity for disabled effect */
+    transform: none; /* No movement when disabled */
+    z-index: 1; /* Lower stacking so disabled buttons stay lower */
+}
+
+
+
+/* Ball icon styles */
+.ball-icon-btn {
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+    font-size: 50px;
+    border: 1px solid;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Shrinking effect on hover */
+.ball-icon-btn:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* Pressing effect when clicked */
+.ball-icon-btn:active {
+    transform: scale(0.75);
+    background-color: #ff5733; /* Color changes when clicked */
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.8);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* Flashing animation for arrows */
+.flash {
+    animation: flashing 1s ease-in-out infinite;
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Style for the goal flash */
+.goal-flash {
+    animation: goal-scored 0.5s ease-in-out;
+}
+
+@keyframes goal-scored {
+    0% {
+        transform: scale(1);
+        background-color: #ff5733;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #f39c12;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #ff5733;
+    }
+}

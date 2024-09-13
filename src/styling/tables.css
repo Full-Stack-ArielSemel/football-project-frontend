@@ -1,0 +1,59 @@
+table{
+    border-collapse: collapse;
+    background-color: lightgray;
+    width: 100%;
+}
+
+th{
+    padding: 15px;
+    border-bottom: solid 2px black;
+    font-family: "Arial Black";
+}
+
+td,th{
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: "Gadugi";
+    align-self: stretch;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite;
+    padding: 8px;
+}
+
+td:hover {
+
+    transition: all 0.3s ease;
+    background-color: #ddd;
+    color: #333;
+}
+
+tr{
+    font-size: 19px;
+}
+tr:hover {
+
+    transition: all 0.3s ease;
+    background-color: #ddd;
+}
+
+.warningMessage {
+    color: red; /* Text color */
+    text-align: center; /* Center text horizontally */
+    font-size: 28px; /* Adjust size for readability */
+    font-weight: bold; /* Make it stand out */
+    padding: 20px; /* Add padding for spacing */
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border: 2px solid red; /* Red border for emphasis */
+    border-radius: 10px; /* Rounded edges */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 60%; /* Adjust width for better appearance */
+    margin: 0 auto; /* Center the element horizontally */
+    position: absolute; /* Position it relative to the page */
+    top: 100px; /* Position it at the top with some space */
+    left: 50%; /* Start from the middle horizontally */
+    transform: translateX(-50%); /* Adjust the position to truly center it */
+}
+
+
+
