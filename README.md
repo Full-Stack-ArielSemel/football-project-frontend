@@ -82,22 +82,26 @@ To learn React, check out the [React documentation](https://react.dev).
 ### Uploading Images
 
 
-![image](https://github.com/user-attachments/assets/360338be-38c4-4e48-8472-97f4b533dd43)
+![image](https://github.com/user-attachments/assets/055b534e-2a8a-47c7-8a14-6a43789cba75)
+
+![image](https://github.com/user-attachments/assets/26ad7fe5-74e0-4e65-a56a-c441078bd0ea)
+
+![image](https://github.com/user-attachments/assets/38e3645a-10b1-4655-ae90-e79edcf9eaf8)
+
+![image](https://github.com/user-attachments/assets/aa0b007a-c1e2-4df1-a723-982ebc26cf7b)
+
+![image](https://github.com/user-attachments/assets/073616d9-8c3f-4f0e-8782-f6fdde2f2ac8)
 
 
 
 
 
-![image](https://github.com/user-attachments/assets/e1606cb0-f62a-48f1-a08c-9eda2ec54e99)
 
 
 
 
 
-![image](https://github.com/user-attachments/assets/6c94d0d2-dc67-4378-a584-e638c66d5863)
 
 
 
 
-
-![image](https://github.com/user-attachments/assets/2d4f0581-f51e-480f-b815-e2d25f0e0091)
