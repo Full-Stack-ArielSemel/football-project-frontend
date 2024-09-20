@@ -30,6 +30,21 @@ In the project directory, you can run:
    You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature.
    However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+  
+### Deployment
+This section has been moved here: [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment)
+
+### npm run build fails to minify
+This section has been moved here: [https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify](https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify)
+
+### Advanced Configuration
+This section has been moved here: [https://create-react-app.dev/docs/advanced-configuration/](https://create-react-app.dev/docs/advanced-configuration)
+
+### Learn More
+You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
+To learn React, check out the [React documentation](https://react.dev).
+
+
 ### Features
 
 - **SPA (Single Page Application)**: Built as a single-page application for fast, fluid navigation without full page reloads.
@@ -62,21 +77,6 @@ In the project directory, you can run:
   - Comprehensive Testing: Robust component testing using React Testing Library to ensure reliability and maintainability.
   - Code Quality: ESLint is configured to enforce coding standards and maintain high code quality throughout the project.
   - Optimized Build Processes: Scripts for building, testing, and deploying the app are streamlined for efficient development and deployment.
-
-  
-### Deployment
-This section has been moved here: [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment)
-
-### npm run build fails to minify
-This section has been moved here: [https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify](https://create-react-app.dev/docs/troubleshooting/#npm-run-build-fails-to-minify)
-
-### Advanced Configuration
-This section has been moved here: [https://create-react-app.dev/docs/advanced-configuration/](https://create-react-app.dev/docs/advanced-configuration)
-
-### Learn More
-You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
-To learn React, check out the [React documentation](https://react.dev).
-
 
 
 ### Uploading Images
