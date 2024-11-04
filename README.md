@@ -61,23 +61,6 @@ To learn React, check out the [React documentation](https://react.dev).
   - Live Score Updates: Keep track of live scores for ongoing matches, directly reflected in your game listings.
   - Dynamic League Tables: View automatically updating league tables that reflect real-time match results.
     
-- **Axios-Powered API Integration**:
-  - Backend Communication: Axios is used to handle all HTTP requests between the frontend and the backend, enabling efficient data retrieval and submission.
-  - Database Interaction: Seamlessly interact with the backend database to store and retrieve game data, user profiles, and match scores.
-  - Interceptors for Secure API Calls: Axios interceptors manage authentication tokens and error handling for secure and reliable API communication.
-    
-- **Popular React Hooks**: Leverage React's popular hooks like useState, useEffect, useCallback, useReducer, and more
-  for efficient state management, side effect handling, memoization, and complex state logic across the application
-  
-- **JS Cookies for Session Management**:
-   - Session Persistence: JS Cookies are used to manage session tokens, ensuring that user sessions remain active and secure across the application.
-   - Easy Authentication: Simplify user authentication processes with cookies, maintaining session state effectively.
-     
-- **Developer Tools and Best Practices**:
-  - Comprehensive Testing: Robust component testing using React Testing Library to ensure reliability and maintainability.
-  - Code Quality: ESLint is configured to enforce coding standards and maintain high code quality throughout the project.
-  - Optimized Build Processes: Scripts for building, testing, and deploying the app are streamlined for efficient development and deployment.
-
 
 ### Uploading Images
 
