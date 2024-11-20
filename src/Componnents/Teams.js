@@ -111,11 +111,10 @@ function Teams (props) {
         <div>
             <button className={"back-to-leagues"} onClick={()=>props.backToLeagues()}>BACK TO LEAGUES</button>
 
-
           <div className={"container"}>
 
             <div className={"choosingTeams"}>
-                <img style={{width:"5%", marginTop:"17px"}} src={logo} alt={""}/>
+                <img style={{width:"10%", marginTop:"15px"}} src={logo} alt={""}/>
                     <select value={selectedHomeTeam} onChange={(e)=>setSelectedHomeTeam(e.target.value)}>
 
                         <option style={{color:"darkgray"}} disabled value={"SELECT HOME TEAM"}>SELECT HOME TEAM</option>

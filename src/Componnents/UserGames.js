@@ -68,11 +68,11 @@ export default function UserGames(props) {
         <div>
 
             {
-                props.userLiveGames.length > 0 &&
+                props.userLiveGames.length > 0 ?
 
                 <div>
 
-                    <div className={"header-user-list"}>My Live Games (total games : {props.userLiveGames.length})</div>
+                    <div className={"header-user-list"}>Your Live Games (Total Games : {props.userLiveGames.length})</div>
 
 
                     <div className={"user-live-games-container"}>
@@ -116,6 +116,8 @@ export default function UserGames(props) {
                         }
                     </div>
                 </div>
+                :
+                <div className="EmptyGameList">your live games is empty</div>
             }
 
         </div>

@@ -1,25 +1,60 @@
+/* Header Title Styling */
 .header-user-list {
-    color: #0b1908; /* Keeping your existing color */
-    font-size: 40px; /* Same font size as requested */
-    font-weight: bold; /* Bold for emphasis */
-    font-family: "Maiandra GD", sans-serif; /* Retain your chosen font */
-    text-align: center; /* Center-align the text */
-    margin-top: 60px; /* Adjust top margin for better positioning */
-    padding: 20px 0; /* Add padding for vertical space */
-    background: linear-gradient(to right, #ffcc00, #ff9900); /* Warm gradient background */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    letter-spacing: 2px; /* Add space between letters for clarity */
-    width: 60%; /* Constrain width for better centering */
-    margin-left: auto;
-    margin-right: auto; /* Horizontally center the header */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    color: #ffffff; /* Clean white color for the text */
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background */
+    font-size: 2rem; /* Large and bold text */
+    font-weight: bold;
+    text-transform: uppercase; /* Professional uppercase style */
+    letter-spacing: 2px; /* Adds slight spacing between letters */
+    padding: 10px 20px; /* Space around the text */
+    text-align: center; /* Center-aligns the text */
+    border-radius: 10px; /* Rounded corners for a modern touch */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+    width: fit-content; /* Shrinks to fit the text content */
+    margin: 20px auto; /* Centers the header horizontally */
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+    margin-top: 55px;
 }
 
-.header-user-list:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
-    background: linear-gradient(to right, #ff9900, #ffcc00); /* Reverse gradient on hover */
+/* Animation Keyframe for Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9); /* Start slightly smaller */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* End at full size */
+    }
+}
+
+/* Empty Message Styling */
+.EmptyGameList {
+    color: #888888; /* Subtle gray color to indicate a neutral state */
+    font-size: 1.5rem; /* Medium-large text */
+    font-style: italic; /* Adds an elegant style */
+    text-align: center; /* Centers the text */
+    margin: 20px auto; /* Centers the block with spacing */
+    padding: 10px; /* Space around the text */
+    border: 1px dashed #cccccc; /* Dashed border for emphasis */
+    border-radius: 8px; /* Slight rounding for a polished look */
+    background-color: #f9f9f9; /* Light background to make it stand out */
+    max-width: 400px; /* Keeps the width tidy */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+    margin-top: 55px;
+}
+
+/* Animation Keyframe for Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Starts slightly above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends in its original position */
+    }
 }
 
 .user-live-games-container{
@@ -55,6 +90,7 @@
     padding: 5px 10px;
     transition: background-color 0.3s ease;
     text-shadow: 2px 2px 4px rgba(2,2,2,2);
+    margin-left: 50px;
 }
 
 .row-user-home-team,.row-user-away-team {
@@ -63,10 +99,11 @@
 }
 
 .icon-team{
-
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 30pxx;
     padding: 5px;
+    size-adjust: 30px;
+    margin-inline-end: 10%;
 
 }
 
@@ -85,7 +122,6 @@
     font-size: 20px;
 }
 .EndGame{
-
     background-color: rgba(192, 255, 215, 0.73);
     border-radius:20px;
     font-size:18px;
@@ -93,8 +129,8 @@
     font-weight: bold;
     padding: 5px 10px;
     text-align: center;
-
 }
+
 .EndGame:hover{
     cursor: pointer;
 }
@@ -103,16 +139,16 @@
     background-color: rgba(34, 193, 195, 0.85); /* Vibrant cyan color with slight transparency */
     color: white; /* White text for contrast */
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
-    border-radius: 35px;
+    border-radius: 28px;
     font-family: 'Source Code Pro', monospace;
     padding: 15px 30px; /* Spacing for larger button */
     border: none; /* Remove borders */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
     transition: all 0.3s ease; /* Smooth transitions */
-    z-index: 10; /* Ensures button is on top of the purple grid */
     position: relative; /* Keeps the button above other elements */
+    margin-top: 30px;
 }
 
 .runLiveBtn:hover {
@@ -130,7 +166,7 @@
 
 /* Disabled state */
 .runLiveBtn:disabled {
-    background-color: rgba(128, 128, 128, 0.6); /* Light gray to indicate disabled */
+    background-color: rgba(13, 97, 122, 0.6); /* Light gray to indicate disabled */
     color: #999999; /* Gray text to show it's inactive */
     cursor: not-allowed; /* Shows cursor as not-allowed */
     box-shadow: none; /* Remove shadow for disabled button */
@@ -138,7 +174,6 @@
     transform: none; /* No movement when disabled */
     z-index: 1; /* Lower stacking so disabled buttons stay lower */
 }
-
 
 
 /* Ball icon styles */
