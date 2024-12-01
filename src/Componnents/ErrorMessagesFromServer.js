@@ -6,76 +6,114 @@ export default function errorMessagesFromServer(props){
     switch (codeNumber){
 
         case 1000:
-            message = "username is required";
+            message = "username is missing";
             break;
 
         case 1001:
-            message = "password is required";
+            message = "password is missing";
             break;
 
         case 1002:
-            message = "username must contains 6 character at least";
+            message = "Invalid Username";
             break;
 
         case 1003:
-            message = "username must contains any letter";
+            message = "Invalid Password";
             break;
-
+        
         case 1004:
-            message = "password must contains 8 characters at least";
+            message = "Username NOT FOUND"
             break;
-
+        
         case 1005:
-            message = "password must contains capital letter";
+            message = "Username must be at least 6 characters"
             break;
 
         case 1006:
-            message = "password must contains lower letter";
+            message = "Username must include letters"
             break;
 
         case 1007:
-            message = "password must contains digit";
+            message = "Password must be at least 8 characters"
             break;
-
+        
         case 1008:
-            message = "Error: this username is already exist";
+            message = "Password must contain a capital letter"
             break;
 
         case 1009:
-            message = "Error: wrong username or password";
+            message = "Password must contain a lower letter";
             break;
 
         case 1010:
-            message = "ERROR: NO SUCH TOKEN";
+            message = "Password must contains a digit";
             break;
 
         case 1011:
-            message = "home team doesnt exist";
-            break;
+            message = "Username must start with a letter"
 
         case 1012:
-            message = "away team doesnt exist";
+            message = "Password must start with lettet or digit";
             break;
 
         case 1013:
-            message = "home team already in live";
+            message = "This username is already exist";
             break;
 
         case 1014:
-            message = "away team already in live";
+            message = "Wrong Login Creds";
             break;
 
         case 1015:
-            message = "you can not choosing two identical teams";
+            message = "No such Token";
             break;
 
         case 1016:
-            message = "this game not in live";
+            message = "Home team doesnt exist";
             break;
 
+        case 1017:
+            message = "Away team dowsnt exist";
+            break;
+
+        case 1018:
+            message = "Home team already in live";
+            break;
+
+        case 1019:
+            message = "Away team already in live";
+            break;
+
+        case 1020:
+            message = "You can not choosing two identical teams";
+            break;
+
+        case 1021:
+            message = "This game not in live";
+            break;
+
+        case 1022:
+            message = "Home team doesnt exist in this league";
+            break;
+
+        case 1023:
+            message = "Away team doesnt exist in this league";
+            break;
+        
+        case 1024:
+            message = "This league doesnt exist";
+            break;
+
+        case 1025:
+            message = "Username contains space";
+            break;
+
+        case 1026:
+            message = "Password contains space";
+            break;
+        
         default:
             break;
-
     }
 
     return(

@@ -16,7 +16,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path={"/dashboard"} element={<DashBoard/>}>
-                    <Route path={"actions"} element={<Actions/>}/>
+                    <Route path={"user-games"} element={<Actions/>}/>
                     <Route path={"logout"} element={<Login/>}/>
                     <Route path={"live-scores"} element={<LiveScores/>}/>
                     <Route path={"live-table"} element={<LiveTable/>}/>

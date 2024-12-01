@@ -12,7 +12,7 @@ import {useEffect} from "react";
 function NavBar() {
 
     const links = [
-        {to:"actions",text:"Actions",icon:<FaHome/>},
+        {to:"user-games",text:"User Games",icon:<FaHome/>},
         {to:"live-scores" , text:"Live Scores", icon: <IoIosFootball/>},
         {to:"live-table" , text:"Live Table", icon: <GiPodiumWinner/>},
         {to:"general-table" , text:"General Table", icon: <GiPodium/>},

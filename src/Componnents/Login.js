@@ -18,7 +18,7 @@ function Login() {
     useEffect(() => {
         const token = Cookies.get("token");
         if (token !== undefined) {
-            navigate("/dashboard/actions");
+            navigate("/dashboard/user-games");
         }
     }, [navigate]);
 
@@ -47,7 +47,7 @@ function Login() {
             if (res.data.success) {
                 setErrorCodeLogIn(0);
                 Cookies.set("token", res.data.user.token);
-                navigate("/dashboard/actions");
+                navigate("/dashboard/user-games");
             } else {
                 setErrorCodeLogIn(res.data.errorCode);
             }
@@ -94,11 +94,29 @@ function Login() {
         return /[0-9]/.test(password);
     };
 
+    const usernameContainsSpace = () =>{
+        return /[" "]/.test(username);
+    }
+
+    const usernameStartWithLetter = () =>{
+        return /^[A-Za-z]/.test(username);
+    }
+
+    const passStartWithLetterOrDigit = () =>{
+        return /^[A-Za-z0-9]/.test(password);
+    }
+
+    const passContainSpace = () =>{
+        return /[" "]/.test(password);
+    }
+
+
     const freeButton = () => {
         return !validUsernameSize() || !usernameContainsLetter() || !validPassSize()
             || !passContainsCapitalLetter() || !passContainsSmallLetter() || !passContainsDigit();
     };
 
+    
     return (
         <div className="regContainer">
             <div className="logo">
@@ -159,12 +177,22 @@ function Login() {
                         </div>
                         <div className="div-conditions">
                             <div style={{ color: validUsernameSize() ? "green" : "red" }}>
-                                {validUsernameSize() ? "✔ Username must contain at least 6 characters" : "✘ Username must contain at least 6 characters"}
+                                {validUsernameSize() ? "✔ Username must be at least 6 characters" : "✘ Username must be at least 6 characters"}
                             </div>
+
                             <div style={{ color: usernameContainsLetter() ? "green" : "red" }}>
-                                {usernameContainsLetter() ? "✔ Username must contain letters" : "✘ Username must contain letters"}
+                                {usernameContainsLetter() ? "✔ Username must include letters" : "✘ Username must include letters"}
                             </div>
+
+                            <div style={{ color: !usernameContainsSpace() ? "green" : "red" }}>
+                                {!usernameContainsSpace() ? "✔ Username must not contain spaces" : "✘ Username must not contain spaces"}
+                            </div>
+
+                            <div style={{ color: usernameStartWithLetter() ? "green" : "red" }}>
+                                {usernameStartWithLetter() ? "✔ Username must start with a letter" : "✘ Username must start with a letter"}
+                            </div>    
                         </div>
+
                         <div className="flex-input">
                             <i className="icon fas fa-lock"></i> {/* Lock icon */}
                             <label style={{marginTop:'10px'}} htmlFor="password">Password:</label>
@@ -175,20 +203,31 @@ function Login() {
                                 onChange={changePassInput}
                             />
                         </div>
+
                         <div className="div-conditions">
+
                             <div style={{ color: validPassSize() ? "green" : "red" }}>
-                                {validPassSize() ? "✔ Password must contain at least 8 characters" : "✘ Password must contain at least 8 characters"}
+                                {validPassSize() ? "✔ Password must be at least 8 characters" : "✘ Password must contain at least 8 characters"}
                             </div>
                             <div style={{ color: passContainsCapitalLetter() ? "green" : "red" }}>
                                 {passContainsCapitalLetter() ? "✔ Password must contain a capital letter" : "✘ Password must contain a capital letter"}
                             </div>
                             <div style={{ color: passContainsSmallLetter() ? "green" : "red" }}>
-                                {passContainsSmallLetter() ? "✔ Password must contain a small letter" : "✘ Password must contain a small letter"}
+                                {passContainsSmallLetter() ? "✔ Password must contain a lower letter" : "✘ Password must contain a small letter"}
                             </div>
-                            <div style={{ color: passContainsDigit() ? "green" : "red" }}>
+                            <div style={{ color : passContainsDigit() ? "green" : "red" }}>
                                 {passContainsDigit() ? "✔ Password must contain a digit" : "✘ Password must contain a digit"}
                             </div>
+                            <div style={{ color: passStartWithLetterOrDigit() ? "green" : "red" }}>
+                                {passStartWithLetterOrDigit() ? "✔ Password must start with a letter or digit" :"✘ Password must start with a letter or digit"}
+                            </div>
+
+                            <div style={{color: !passContainSpace() ? "green" : "red"}}> 
+                                {!passContainSpace() ? "✔ Password must not contain a space" : "✘ Password must not contain a space"}
+                            </div>
+
                         </div>
+
                         <button style={{marginTop:'10px'}}
                             onClick={signUpBtn}
                             className="submitBtn"
